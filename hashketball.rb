@@ -129,9 +129,9 @@ end
 def num_points_scored(name)
   
   game_hash.each do |location, category|
-    game_hash[location][:players].each do |stats_hash|
-      if game_hash[location][:players][stats_hash][:player_name] == name
-        return game_hash[location][:players][stats_hash][:points]
+    game_hash[location][:players].each_index do |player_index|
+      if game_hash[location][:players][player_index][:player_name] == name
+        return game_hash[location][:players][player_index][:points]
       end
     end
   end
