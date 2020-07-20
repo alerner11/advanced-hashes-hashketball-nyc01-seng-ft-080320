@@ -155,6 +155,13 @@ def team_colors(team_name)
   end
 end
 
+def team_names
+  all_names = []
+  game_hash.each do |location, category|
+    all names << game_hash[location][:team_name]
+  end
+end
+
 def player_numbers(team_name)
 end
 
