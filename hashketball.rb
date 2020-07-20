@@ -187,17 +187,17 @@ end
 
 def big_shoe_rebounds
   largest_shoe = 0
-  largest_shoe_index = 0
+  largest_shoe_rebounds = 0
   game_hash.each do |location, category|
     game_hash[location][:players].each_index do |player_index|
       if game_hash[location][:players][player_index][:shoe] > largest_shoe
         largest_shoe = game_hash[location][:players][player_index][:shoe]
-        largest_shoe_index = player_index
+        largest_shoe_rebounds = game_hash[location][:players][player_index][:rebounds]
       end
     end
   end
   
-  return game_hash[location][:players][largest_shoe_index][:rebounds]
+  return largest_shoe_rebounds
 end
 
 def most_points_scored
