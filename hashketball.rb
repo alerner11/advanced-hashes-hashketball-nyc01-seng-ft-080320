@@ -160,7 +160,7 @@ def team_names
   game_hash.each do |location, category|
     all_names << game_hash[location][:team_name]
   end
-  all_names
+  return all_names
 end
 
 def player_numbers(team_name)
