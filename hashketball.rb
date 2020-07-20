@@ -245,7 +245,6 @@ def player_with_longest_name
 end
 
 def long_name_steals_a_ton?
-  longest_name = player_with_longest_name
   most_steals = 0
   steals_name = ""
   game_hash.each do |location, category|
