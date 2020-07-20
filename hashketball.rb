@@ -229,9 +229,9 @@ def winning_team
       most_team_points_name = game_hash[location][:team_name]
     end
   end
-  puts most_team_points_name
+  return most_team_points_name # it works!
 end
-winning_team
+
 def player_with_longest_name
 end
 
