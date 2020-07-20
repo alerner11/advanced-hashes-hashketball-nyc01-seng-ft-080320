@@ -215,7 +215,6 @@ def most_points_scored
   return most_points_name # it works!
 end
 
-
 def winning_team
 end
 
