@@ -212,7 +212,7 @@ def most_points_scored
     end
   end
   
-  return most_points_name 
+  puts most_points_name 
 end
 
 most_points_scored
