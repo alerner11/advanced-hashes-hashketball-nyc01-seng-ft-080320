@@ -246,4 +246,12 @@ end
 
 def long_name_steals_a_ton?
   longest_name = player_with_longest_name
+  most_steals = 0
+  game_hash.each do |location, category|
+    game_hash[location][:players].each_index do |player_index|
+      if game_hash[location][:players][player_index][:steals] > most_steals
+        most_steals = game_hash[location][:players][player_index][:steals]
+      end
+    end
+  end
 end
