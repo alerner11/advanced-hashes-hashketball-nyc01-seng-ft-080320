@@ -231,7 +231,7 @@ def winning_team
   end
   puts most_team_points_name
 end
-
+winning_team
 def player_with_longest_name
 end
 
