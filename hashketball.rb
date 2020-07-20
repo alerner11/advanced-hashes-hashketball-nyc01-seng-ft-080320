@@ -130,7 +130,11 @@ def num_points_scored(name)
   points
   
   game_hash.each do |location, category|
-    if location[]
+    game_hash[location][players].each do |stats_hash|
+      if game_hash[location][players][stats_hash][player_name] == name
+        return game_hash[location][players][stats_hash][points]
+      end
+    end
   end
 end
 
