@@ -212,10 +212,9 @@ def most_points_scored
     end
   end
   
-  puts most_points_name 
+  return most_points_name # it works!
 end
 
-most_points_scored
 
 def winning_team
 end
