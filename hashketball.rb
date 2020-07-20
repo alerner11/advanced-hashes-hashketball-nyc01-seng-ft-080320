@@ -226,7 +226,7 @@ def winning_team
     end
     if individual_team_points > most_team_points
       most_team_points = individual_team_points
-      most_team_points_name = game_hash[location][team_name]
+      most_team_points_name = game_hash[location][:team_name]
     end
   end
   puts most_team_points_name
