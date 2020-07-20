@@ -257,7 +257,6 @@ def long_name_steals_a_ton?
   end
   
   if steals_name == player_with_longest_name
-    return true
+    return true # it works!
   end
 end
-long_name_steals_a_ton?
