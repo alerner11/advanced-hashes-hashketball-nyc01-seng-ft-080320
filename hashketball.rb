@@ -127,6 +127,11 @@ def game_hash
 end
 
 def num_points_scored(name)
+  points
+  
+  game_hash.each do |location, category|
+    if location[]
+  end
 end
 
 def shoe_size(name)
